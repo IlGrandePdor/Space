@@ -1,0 +1,134 @@
+
+<!DOCTYPE html PUBLIC>
+<!-- saved from url=(0016)https://localhost -->
+<html>
+	<head>
+		<title>Space Exploration</title>
+		
+		<style type= text/css>
+			body {
+				
+				font-size: 17px; 
+				font-family: Arial;
+			}
+
+			.supernovaImg {
+				display: block;
+				margin: auto;
+				width: 700px; 
+				right: auto; 
+				left: auto;
+			}
+
+			.solarSystemImg {
+				display: block;
+				margin: auto;
+				width: 700px; 
+				right: auto; 
+				left: auto;
+			}
+
+			.universeButton {
+				width: 80px; 
+				height: 50px; 
+				font-size: 15px; 
+				text-Align: center; 
+				font-family: Arial; 
+				color: #000000; 
+				background-color: #3366FF;
+				display: block;
+				border: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.travelButton{
+				width: 80px; 
+				height: 50px; 
+				font-size: 15px; 
+				text-Align: center; 
+				font-family: Arial;
+				color: #000000; 
+				background-color: #3366FF;
+				display: block;
+				border: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	<body  text = "orange", src="Supernova.jpg">
+		<h1 align = "center", style = "font-size: 80px; color: blue; font-family: Arial;">
+			Space Exploration
+		</h1>
+		
+		<b>About 14 billion years ago, the Universe was only one extremely dense point. 
+		Suddenly something happened, the phenomenon called Big Bang unleashed enormous energy waves in every directions:</b><br>
+		
+		<p align = "center", style = "font-size: 30px">	
+			<b>Our universe was born.</b><br>
+		</p>
+		
+		<img id = "Image", src="Supernova.jpg", alt="", class = "supernovaImg"/>
+		<br>
+		<button type = "button", id = "myBtn", class = "universeButton">Universe</button>
+		<br>
+		
+		<b>Welcome in our galaxy, the Milky Way, where billions of stars orbits around the same galactic nucleus. 
+		Among this stars there was a yellow small one: <font color = "darkyellow">The Sun</font></b>
+		<br>
+		<b>Sun is light, is warmth and hope for life on our beautiful planet:</b> <p align = "center", style = "color: lightblue; font-size: 25px">The Earth</p>
+		<br>
+		<img src="Earth.gif", style = "width: 300px", alt=""/>
+		<br>
+		<b>Earth is one of 8 planet to orbits around the sun which together 
+		Mercury, Venus, Mars, Jupiter, Saturn, Uran and Neptune forms<p align = "center", style = "color: red; font-size: 25px">The Solar System</p></b>
+		<img id = "Sun", src = "Solar_System.gif", class = "solarSystemImg", alt=""/>
+		<br>
+		<b>Now we are ready to start our travel to discover the misteries of Cosmos</b>
+		<br>
+		<button type = "button", id = "travelBtn", class = "travelButton">Go to Space</button>
+		<script type = "text/javascript">
+            var x = document.getElementById("myBtn");
+            var img = document.getElementById('Image');
+            let activationButton = true;
+            x.addEventListener("click", function () {
+                activationButton = !activationButton;
+                if (activationButton) {
+                    img.src = "Panorama.gif";
+                } else {
+                    img.src = "Supernova.jpg";
+                }
+            });
+
+            var travelBtn = document.getElementById("travelBtn");
+            travelBtn.addEventListener("click", function () {
+                //window.open('https://www.starcomics.com/');
+                //window.open('Color_Button_Changing.html');
+            });
+
+			//var solarsystem = document.getElementById("sunBtn");
+			//const sun = document.getElementById("Sun");
+			//let activation = true;
+			//solarsystem.addEventListener("click", function() {
+				//activation = !activation;
+				//if(activation){
+					//sun.src = "Solar_System.gif";
+				//}else {
+					//sun.src = "Sun.gif";
+				//}
+			//});
+
+			//<input type="button" value="button name" onclick="window.open('http://www.website.com/page')" />
+		</script>
+	</body>
+</html>
+
+
+<!--"#00008B"-->
+<!--<img Gino = "Image" src = "..\Space\Panorama.gif" style = "width: 200px">-->
+
+<!--<button activate = "document.getElementId('Image').src = '..\Space\Panorama.gif'">Start</button>
+<img Gino = "Image" src = "..\Space\Purple_Nebula.jpeg" style = "width: 200px">-->
+
+<!--<button onclick = "document.getElementById('Image').src = 'Panorama.gif'">Change</button>-->
+<!--<button type = "button", id = "sunBtn", style = "width: 80px; height: 50px; font-size: 15px; textAlign: center">Solar System</button>-->
