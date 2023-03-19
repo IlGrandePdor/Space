@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Solar System </title>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<img src="https://raw.githubusercontent.com/IlGrandePdor/Space/main/Space_Img/Solar_System_Planets.jpg", width = "1700", height = "900", alt = "Planets", usemap = "#planetmap">
+
+		<map id="imagemap" name="planetmap">
+			<area shape="circle" coords="90,460,15" href="second.htm" alt="Sun">
+			<area shape="circle" coords="420,480,15" href="Color_Button_Changing.html" alt="Mercury">
+			<area shape="circle" coords="550,380,15" href="second.htm" alt="Venus">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Earth">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Mars">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Jupiter">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Saturn">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Uran">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Neptune">
+			<area shape="circle" coords="331,243,15" href="second.htm" alt="Pluto">
+		</map>
+
+		<div id="result"></div>
+		<script>
+			var points = document.querySelectorAll('#imagemap area');
+			result = document.getElementById('result');
+
+			Array.prototype.slice.call(points).forEach(function(point) {
+
+				point.addEventListener('mouseenter', function() {
+					result.innerHTML = this.alt + '<br>' + result.innerHTML;			//Returns "alt" value concats with previous ones
+				});
+			});
+		</script>
+	</body>
+</html>
